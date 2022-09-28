@@ -1335,8 +1335,6 @@ public class enigman2 {
         t2 = t2.replace("oo","ď");//option"m"
         t2 = t2.replace("∆O","đ");//option"m"
 
-
-        
         // ---------------------------------------------------------------------------------
 
         int qx = t2.length();
