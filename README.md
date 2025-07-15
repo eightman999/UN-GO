@@ -24,4 +24,5 @@ java -cp out com.company.Main
 
 ## ライセンス
 
-本リポジトリにはライセンス表記がありません。必要に応じて利用者自身でご確認ください。
+本リポジトリは「DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE (WTFPL)」で公開されています。
+詳細は同梱の `LICENSE` ファイルをご覧ください。
