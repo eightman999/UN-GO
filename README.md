@@ -20,6 +20,13 @@ javac -d out src/com/company/*.java
 java -cp out com.company.Main
 ```
 
+GUI で暗号化/復号を試したい場合は `MinimGUI` クラスを起動します。`.enigm`
+ファイルを読み込ませることで任意の変換表を使用できます。
+
+```bash
+java -cp out com.company.MinimGUI
+```
+
 生成された数値列を復号するには `SimpleDecoder` を使用できます。
 
 ```bash
