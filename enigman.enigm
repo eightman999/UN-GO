@@ -3,7 +3,7 @@
  [1,11,111]\
 //-2,\
 to [0 abcdefghijklnmopqrstuvwxyz1]\
-Or to [1 hijklnmo1pqrstuvwxyzabcdefg]\
+or to [1 hijklnmo1pqrstuvwxyzabcdefg]\
 or to [2 stuvwxyzabcd1efghijklnmopqr]\
 //-3,\
 Case\
@@ -46,7 +46,7 @@ case => [** = 00 => A]\
      => [*  = 0  => E]\
      => [*  = 1  => F]\
 //-6,\
-Case \
+case \
  [\
  -A,000\
  -B,001\
@@ -68,7 +68,7 @@ case = [=> [** = 00 => 1]\
 //-9\
 [|**|**|**|**|**|**|\'85|**|**|] or[|**|**|**|\'85|**|*]\
 //-10\
-Case (** or * ) =\
+case (** or * ) =\
 [\
 11=>A\
 12=>B\
@@ -106,7 +106,7 @@ Case (** or * ) =\
 Normal + YZghfn\
 //-12,\
 to [0 abcdefghijklnmopqrstuvwxyz1]\
-Or to [1 hijklnmo1pqrstuvwxyzabcdefg]\
+or to [1 hijklnmo1pqrstuvwxyzabcdefg]\
 or to [2 stuvwxyzabcd1efghijklnmopqr]\
 //-13\
 + -a,-s,-d\
