@@ -20,6 +20,13 @@ javac -d out src/com/company/*.java
 java -cp out com.company.Main
 ```
 
+生成された数値列を復号するには `SimpleDecoder` を使用できます。
+
+```bash
+echo "140169176176179999187179182176168" | \
+    java -cp out com.company.SimpleDecoder
+```
+
 ※ Java 8 以降の環境で動作確認を行っています。
 
 ## ライセンス
