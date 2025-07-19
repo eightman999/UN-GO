@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 入力文字を3桁の数値コードへ変換し、結果をファイルにも保存するエンコーダ。
+ */
+
 package com.company;
 import java.io.*;
 import java.util.Random;

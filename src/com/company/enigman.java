@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 定型句を記号に置き換えた後、記号を3桁数値のコードへ変換して出力する暗号化プログラム。
+ */
+
 package com.company;
 import java.io.*;
 import java.util.Random;

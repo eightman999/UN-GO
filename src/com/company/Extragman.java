@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 基底クラスenigmn_finの暗号化に加え、頻出単語を独自コードに置き換える拡張。
+ *           encryptExtraで置換後に暗号化し、decryptExtraで逆変換する。
+ */
+
 package com.company;
 
 import java.util.LinkedHashMap;

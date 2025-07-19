@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: enigmanの数値コード列をテーブル参照で元の文字へ復号するクラス。
+ */
+
 package com.company.decoder;
 
 import java.util.*;

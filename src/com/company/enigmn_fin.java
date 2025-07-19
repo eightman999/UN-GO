@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: MINIM・enigman・enigman2の処理を順に適用する統合暗号化クラス。
+ */
+
 package com.company;
 
 import java.io.BufferedReader;

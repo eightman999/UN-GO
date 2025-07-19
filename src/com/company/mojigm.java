@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 入力文字列のSHA-256ハッシュを基に2バイトずつUnicode文字へ変換するエンコーダ。
+ */
+
 package com.company;
 
 import java.io.BufferedReader;

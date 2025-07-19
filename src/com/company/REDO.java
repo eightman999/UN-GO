@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 3桁数値列をswitch文の表に基づき元の文字へ復号するツール。
+ */
+
 package com.company;
 
         import java.io.BufferedReader;
