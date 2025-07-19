@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: enigmanの置換にさらなる語句を追加し、同様に数値コード化する拡張版。
+ */
+
 package com.company;
 import java.io.*;
 import java.util.Random;

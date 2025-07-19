@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: 入力から英大文字を取り出し-5シフトのシーザー暗号を施して表示する。
+ */
+
 package com.company;
 
 import java.io.BufferedReader;

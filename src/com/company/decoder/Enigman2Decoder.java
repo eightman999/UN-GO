@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: enigman2が出力するコードから元の文字列を復号するマッピングデコーダ。
+ */
+
 package com.company.decoder;
 
 import java.util.*;

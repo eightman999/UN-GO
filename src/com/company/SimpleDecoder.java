@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: EnigmanDecoderのマップを利用し、数値列を直接テキストへ戻す簡易デコーダ。
+ */
+
 package com.company;
 
 import com.company.decoder.EnigmanDecoder;

@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) eightman 2005-2025
+ * Furin-lab All rights reserved.
+ * 動作設計: MINIMのシーザー暗号をGUI化し、.enigmで定義されたコード表による暗号化と復号を行う。
+ */
+
 package com.company;
 
 import javax.swing.*;
