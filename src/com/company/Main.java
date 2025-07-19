@@ -8,11 +8,22 @@ package com.company;
 import java.io.*;
 import java.util.Random;
 import java.util.UUID;
+/**
+ * 非常に冗長な文字→数値変換処理を実行するエントリーポイントクラス。
+ * 生成された数値列はユーザーが入力したパスワードと共にファイルへ保存される。
+ */
 public class Main {
+    /**
+     * メイン処理。ユーザー入力を読み取り、巨大な switch 文で各文字を 3 桁コードへ
+     * 変換し、様々な置換を行った後に結果を保存する。
+     */
     public static final void main(String[] args) {
+        // コンソール入力用のリーダーを準備
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("キーボードから入力してください");
+
+        // パスワードと平文の入力を受け付ける
         String str23 =";";
         String str = "";
         try {
@@ -24,12 +35,13 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println("入力された文字は「" + str + "」です");
-        //鍵
-//      final int key = -10;
-        //暗号対象の文字列
+        // 暗号対象の文字列を溜めるバッファ
         String t1 = "";
+
+        // 入力文字列を1文字ずつ走査し、対応する3桁コードへ変換
         char[] c = str.toCharArray();
         for (char c1 : c) {
+            // このswitchはASCIIと一部のUnicode文字をハードコードで変換する
             switch (c1) {
                 case 0x0020:
                     t1 = t1 + "999";
@@ -373,9 +385,14 @@ public class Main {
         }
 
 
+        // 変換後の数値列を保持しておく
         String t3 = t1;
-           String t2= t1;
-            t2 = t2.replace("29","a");System.out.println(t2);
+
+        // 以降の複雑な置換に用いる作業用変数
+        String t2 = t1;
+
+        // 数値コードを文字や記号へ置き換える
+        t2 = t2.replace("29","a");System.out.println(t2);
             t2 = t2.replace("17", "b");System.out.println(t2);
             t2 = t2.replace("00", "c");System.out.println(t2);
             t2 = t2.replace("11", "d");System.out.println(t2);
@@ -457,8 +474,10 @@ public class Main {
             t2 = t2.replace("Ωx",".");System.out.println(t2);
 
 
+        // 複雑な置換後の最終的な文字列
         System.out.println(t2);
 
+        // 最後に空白を ~ に置換
         t2 = t2.replace(" ","~");
         System.out.println(t2);
         int qx = t2.length();
@@ -466,15 +485,17 @@ public class Main {
         float px = 0;
              px = (qx/fx) * 100;
         System.out.println(t2);
+        // ユーザーのホームディレクトリを表示し、ユニークなファイル名を生成
         System.out.println(System.getProperty("user.home"));
         UUID uuid = UUID.randomUUID();
         String str2 = uuid.toString();
-        System.out.println(str2   );
+        System.out.println(str2);
         Random random = new Random();
         System.out.println(str.length());
 
         System.out.println(t2.length());
 
+        // 簡易的な圧縮率を表示
         System.out.println(px + "%" + qx/fx);
         int randomValue = random.nextInt(99);
         String t4 = "pass==>" + str23 +
@@ -482,6 +503,7 @@ public class Main {
         try {
             System.out.println("PassWordをキーボードから入力してください");
 
+            // 変換結果をデスクトップ上のユニークなファイルに保存
             FileOutputStream fos = new FileOutputStream(System.getProperty("user.home") + "/Desktop/" + str2 + ".exe" +
                     "");
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
@@ -492,6 +514,7 @@ public class Main {
         } catch (IOException e) {
             System.out.println(e);
         }
+        // コンソールに情報を表示
         System.out.println(t1);
         System.out.println("暗号は" + t2);
         System.out.println(t3);

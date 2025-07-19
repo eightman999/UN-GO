@@ -6,5 +6,9 @@
 
 package com.company;
 
+/**
+ * 過去バージョンとの互換性のために残されているプレースホルダクラス。
+ */
+
 public class REMINIM {
 }

@@ -5,11 +5,18 @@
  */
 
 package com.company;
+
+/**
+ * enigman にさらに語句の置換を追加した拡張版。
+ */
 import java.io.*;
 import java.util.Random;
 import java.util.UUID;
 public class enigman2 {
-    public static final void main(String[] args) {
+    /**
+     * 拡張された置換と数値変換処理を実行する。
+     */
+        public static final void main(String[] args) {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("キーボードから入力してください");

@@ -6,12 +6,20 @@
 
 package com.company;
 
+/**
+ * 入力から英大文字のみを抜き出し、-5 シフトのシーザー暗号を施して出力する
+ * コマンドラインツール。
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class MINIM {
-    public static final void main(String[] args) {
+    /**
+     * 標準入力を読み取り、暗号化した結果を表示する。
+     */
+        public static final void main(String[] args) {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("キーボードから入力してください");

@@ -6,10 +6,17 @@
 
 package com.company.decoder;
 
+/**
+ * enigman2 が出力した文字列を復号するデコーダ。
+ */
+
 import java.util.*;
 
 public class Enigman2Decoder {
-    private static Map<String, Character> createMap() {
+    /**
+     * 復号処理に使用するマッピング表を構築する。
+     */
+        private static Map<String, Character> createMap() {
         Map<String, Character> MAP2 = new HashMap<>();
 MAP2.put("A01", 'Ҁ');
 MAP2.put("A02", 'ҁ');
