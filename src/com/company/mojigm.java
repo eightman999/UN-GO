@@ -5,6 +5,10 @@
  */
 
 package com.company;
+/**
+ * 文字列の SHA-256 ハッシュ値を基にランダム風の Unicode 文字列へ変換する
+ * ユーティリティ。
+ */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,7 +17,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class mojigm {
-    public static void main(String[] args) {
+    /**
+     * Unicode 文字化けエンコーダのコマンドラインデモ。
+     */
+        public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter text to encode:");
         try {

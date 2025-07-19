@@ -6,10 +6,17 @@
 
 package com.company.decoder;
 
+/**
+ * 3桁の数値コードを対応する文字へ変換するデコーダ。
+ */
+
 import java.util.*;
 
 public class EnigmanDecoder {
-    private static Map<String, Character> createMap() {
+    /**
+     * 復号に用いる変換テーブルを生成する。
+     */
+        private static Map<String, Character> createMap() {
         Map<String, Character> MAP = new HashMap<>();
 MAP.put("900", 'å');
 MAP.put("901", 'Å');

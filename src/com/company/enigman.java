@@ -5,11 +5,18 @@
  */
 
 package com.company;
+
+/**
+ * 定型句を記号に置き換え、その後 3 桁コード列に変換する基本的な暗号化例。
+ */
 import java.io.*;
 import java.util.Random;
 import java.util.UUID;
 public class enigman {
-    public static final void main(String[] args) {
+    /**
+     * 置換と数値変換を実行し、結果を保存する。
+     */
+        public static final void main(String[] args) {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("キーボードから入力してください");

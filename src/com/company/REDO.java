@@ -6,12 +6,20 @@
 
 package com.company;
 
+/**
+ * 標準入力から暗号化済み文字列を受け取り、3桁コードを元の文字に戻す
+ * 簡易デコーダ。
+ */
+
         import java.io.BufferedReader;
         import java.io.IOException;
         import java.io.InputStreamReader;
 
 public class REDO {
-    public static final void main(String[] args) {
+    /**
+     * コンソールから利用するインタラクティブなエントリーポイント。
+     */
+        public static final void main(String[] args) {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("キーボードから入力してください");
