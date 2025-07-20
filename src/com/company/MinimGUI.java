@@ -14,10 +14,12 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.ResourceBundle;
 
 /**
  * Simple GUI application that performs encryption and decryption
@@ -29,9 +31,11 @@ public class MinimGUI extends JFrame {
     private final Map<String, String> charToCode = new HashMap<>();
     private final Map<String, String> codeToChar = new HashMap<>();
     private final List<String> codesSorted = new ArrayList<>();
+    private static final ResourceBundle BUNDLE =
+            ResourceBundle.getBundle("com.company.i18n.messages");
 
     public MinimGUI() {
-        super("MINIM Encrypt/Decrypt");
+        super(BUNDLE.getString("title"));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 300);
         setLayout(new BorderLayout());
@@ -42,9 +46,9 @@ public class MinimGUI extends JFrame {
         outputArea.setEditable(false);
         add(center, BorderLayout.CENTER);
 
-        JButton encButton = new JButton("Encrypt");
-        JButton decButton = new JButton("Decrypt");
-        JButton loadButton = new JButton("Load .enigm");
+        JButton encButton = new JButton(BUNDLE.getString("encrypt"));
+        JButton decButton = new JButton(BUNDLE.getString("decrypt"));
+        JButton loadButton = new JButton(BUNDLE.getString("load_enigm"));
         JPanel buttons = new JPanel();
         buttons.add(encButton);
         buttons.add(decButton);
@@ -73,13 +77,17 @@ public class MinimGUI extends JFrame {
                     File file = chooser.getSelectedFile();
                     try {
                         loadEnigm(file);
-                        JOptionPane.showMessageDialog(MinimGUI.this,
-                                "Loaded " + file.getName(),
-                                "ENIGM", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(
+                                MinimGUI.this,
+                                MessageFormat.format(BUNDLE.getString("loaded"), file.getName()),
+                                BUNDLE.getString("enigm_title"),
+                                JOptionPane.INFORMATION_MESSAGE);
                     } catch (IOException ex) {
-                        JOptionPane.showMessageDialog(MinimGUI.this,
-                                "Failed to load: " + ex.getMessage(),
-                                "ENIGM", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(
+                                MinimGUI.this,
+                                MessageFormat.format(BUNDLE.getString("failed_to_load"), ex.getMessage()),
+                                BUNDLE.getString("enigm_title"),
+                                JOptionPane.ERROR_MESSAGE);
                     }
                 }
             }
